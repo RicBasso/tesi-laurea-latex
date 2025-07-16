@@ -1,9 +1,4 @@
-Il progetto di tiricinio consiste nello sviluppo di appliccazione multi piattaforma, tramite l’utilizzo di flutter, un framework moderno per il building di app.
-
-L’obbiettivo principale della piattaforma è creare un app SAAS (software as a service) per il monitoraggio di ambienti di produzioni, tramite l’utilizzo di monitor collegati ad un progetto per controllare il corretto funzionamento delle api, tramite il codice apposito (2xx).
-
-Questa applicazione associata poi ad l’utilizzo delle notifiche, potrebbe essere ampliamente utile a tutte le agenzie, aziende che si occupano di gestire servizi digitali, quali sitiweb, database, web apps o servizi generali di back end. Permettendo di venire notificarti se i monitor settati rivelano un errore, accorgendosene subito, anche prima del cliente, e risolvendo in modo tempestivo.
-
-Questo permette di offrire una migliore qualità di servizio...
-
-La monetizzazione poi potrebbe essere benissimo fatta tramite un abbonamento mensione, in base al numero di progetti e monitor 
+Il progetto di tirocinio presentato in questa tesi consiste nello sviluppo di un’applicazione mobile multipiattaforma tramite Flutter, un framework moderno e altamente performante per la creazione di interfacce utente native.
+L'obiettivo è la realizzazione di una piattaforma SaaS (Software as a Service) per il monitoraggio di ambienti di produzione digitali, in particolare servizi backend e API. Ogni utente ha la possibilità di configurare dei "monitor", associati a uno o più progetti, per controllare lo stato e l'affidabilità delle risorse attraverso le risposte HTTP (codici 2xx, 4xx, 5xx, ecc.).
+L'applicazione permette di rilevare tempestivamente anomalie o interruzioni nei servizi, notificando in tempo reale eventuali errori e consentendo così una rapida risposta. Questo sistema si rivela particolarmente utile per agenzie e aziende che gestiscono infrastrutture digitali come siti web, database o microservizi.
+Dal punto di vista commerciale, la piattaforma può essere monetizzata tramite un sistema di abbonamento mensile, con funzionalità scalabili in base al numero di progetti o monitor attivi. Questo approccio garantisce flessibilità sia per piccoli team sia per aziende strutturate, offrendo un valore concreto in termini di affidabilità e qualità del servizio.
