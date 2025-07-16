@@ -1,0 +1,19 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Introduzione}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Progettazione}{3}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Contesto e motivazione}{3}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}Obiettivo}{3}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Stato dell’arte}{3}{}%
+\contentsline {paragraph}{Vantaggi applicazione multi-platform}{3}{}%
+\contentsline {subsubsection}{\numberline {1.1.4}Descrizione UpApi}{3}{}%
+\contentsline {subsubsection}{\numberline {1.1.5}Scelte tecnologiche}{3}{}%
+\contentsline {paragraph}{Flutter}{3}{}%
+\contentsline {paragraph}{Node.js}{3}{}%
+\contentsline {paragraph}{Cubit}{3}{}%
+\contentsline {subsubsection}{\numberline {1.1.6}Panoramica dei capitoli}{3}{}%
+\contentsline {paragraph}{Obiettivi / specifiche / use case / requisiti}{3}{}%
+\contentsline {paragraph}{Descrizione implementazione/sviluppo delle varie parti}{3}{}%
+\contentsline {paragraph}{Problematiche}{3}{}%
+\contentsline {paragraph}{Risultati ottenuti}{3}{}%
+\contentsline {paragraph}{Conclusioni e sviluppi futuri}{3}{}%
