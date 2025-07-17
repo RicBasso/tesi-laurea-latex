@@ -29,6 +29,8 @@
 \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
 
+\usepackage[hidelinks]{hyperref}
+
 %%% END Article customizations
 
 \begin{document}
@@ -41,36 +43,25 @@ Il progetto di tirocinio presentato in questa tesi consiste nello sviluppo di un
 \\\\L'applicazione permette di rilevare tempestivamente anomalie o interruzioni nei servizi, notificando in tempo reale eventuali errori e consentendo così una rapida risposta. Questo sistema si rivela particolarmente utile per agenzie e aziende che gestiscono infrastrutture digitali come siti web, database o microservizi.
 \\\\Dal punto di vista commerciale, la piattaforma può essere monetizzata tramite un sistema di abbonamento mensile, con funzionalità scalabili in base al numero di progetti o monitor attivi. Questo approccio garantisce flessibilità sia per piccoli team sia per aziende strutturate, offrendo un valore concreto in termini di affidabilità e qualità del servizio.
 
-
 \newpage
 
 \tableofcontents
 
 \newpage
 
-
-
-\section{Introduzione}
-
-\subsection{Progettazione}
-
-\subsubsection{Contesto e motivazione}
-\subsubsection{Obiettivo}
-\subsubsection{Stato dell’arte}
-\paragraph{Vantaggi applicazione multi-platform}
-
-\subsubsection{Descrizione UpApi}
-\subsubsection{Scelte tecnologiche}
-\paragraph{Flutter}
-\paragraph{Node.js}
-\paragraph{Cubit}
-
-\subsubsection{Panoramica dei capitoli}
-\paragraph{Obiettivi / specifiche / use case / requisiti}
-\paragraph{Descrizione implementazione/sviluppo delle varie parti}
-\paragraph{Problematiche}
-\paragraph{Risultati ottenuti}
-\paragraph{Conclusioni e sviluppi futuri}
+\input{sezioni/0_introduzione.tex}
+\newpage
+\section{\textbf{Obiettivi / specifiche / use case / requisiti}}
+\newpage
+\section{\textbf{Progettazione}}
+\newpage
+\section{\textbf{Descrizione implementazione/sviluppo delle varie parti}}
+\newpage
+\section{\textbf{Problematiche}}
+\newpage
+\section{\textbf{Risultati ottenuti}}
+\newpage
+\section{\textbf{Conclusioni e sviluppi futuri}}
 
 
 \end{document}
