@@ -1,32 +1,22 @@
-% !TEX TS-program = pdflatex
-% !TEX encoding = UTF-8 Unicode
+\documentclass[12pt]{article} 
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage{geometry} 
+\geometry{
+  a4paper,
+  top=2cm,
+  bottom=2cm,
+  outer=2cm,
+  inner=3cm,
+  bindingoffset=0cm
+}
+\usepackage{graphicx} 
 
-% This is a simple template for a LaTeX document using the "article" class.
-% See "book", "report", "letter" for other types of document.
-
-\documentclass[11pt]{article} % use larger type; default would be 10pt
-
-\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
-
-%%% Examples of Article customizations
-% These packages are optional, depending whether you want the features they provide.
-% See the LaTeX Companion or other references for full information.
-
-%%% PAGE DIMENSIONS
-\usepackage{geometry} % to change the page dimensions
-\geometry{a4paper} % or letterpaper (US) or a5paper or....
-
-\usepackage{graphicx} % support the \includegraphics command and options
-
-% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
 
 %%% PACKAGES
-\usepackage{booktabs} % for much better looking tables
-\usepackage{array} % for better arrays (eg matrices) in maths
 \usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
 \usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
-% These packages are all incorporated in the memoir class to one degree or another...
 
 %%% HEADERS & FOOTERS
 \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
@@ -37,8 +27,15 @@
 
 %%% SECTION TITLE APPEARANCE
 \usepackage{sectsty}
-\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+\allsectionsfont{\rmfamily\mdseries\upshape} % (See the fntguide.pdf for font help)
 % (This matches ConTeXt defaults)
+
+\usepackage{titlesec}
+
+% Titoli in grassetto (solo il titolo, non il contenuto)
+\titleformat{\section}{\normalfont\bfseries\Large}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries\large}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\bfseries\normalsize}{\thesubsubsection}{1em}{}
 
 %%% ToC (table of contents) APPEARANCE
 \usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
@@ -46,24 +43,44 @@
 \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
 
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{newtxtext} % per il testo
+\usepackage{newtxmath} % per formule matematiche abbinate
+\usepackage{setspace}
+\onehalfspacing
+
 %%% END Article customizations
 
-%%% The "real" document content comes below...
-
-\title{Test riccardo c}
-\author{The Author}
-%\date{} % Activate to display a given date or no date (if empty),
-         % otherwise the current date is printed 
-
 \begin{document}
-\maketitle
 
-\section{First section}
+\begin{center}
+\subsection*{Sommario}
+\end{center}
+Il progetto di tirocinio presentato in questa tesi consiste nello sviluppo di un’applicazione mobile multipiattaforma tramite Flutter, un framework moderno e altamente performante per la creazione di interfacce utente native.
+\\\\ L'obiettivo è la realizzazione di una piattaforma SaaS (Software as a Service) per il monitoraggio di ambienti di produzione digitali, in particolare servizi backend e API. Ogni utente ha la possibilità di configurare dei "monitor", associati a uno o più progetti, per controllare lo stato e l'affidabilità delle risorse attraverso le risposte HTTP (codici 2xx, 4xx, 5xx, ecc.).
+\\\\L'applicazione permette di rilevare tempestivamente anomalie o interruzioni nei servizi, notificando in tempo reale eventuali errori e consentendo così una rapida risposta. Questo sistema si rivela particolarmente utile per agenzie e aziende che gestiscono infrastrutture digitali come siti web, database o microservizi.
+\\\\Dal punto di vista commerciale, la piattaforma può essere monetizzata tramite un sistema di abbonamento mensile, con funzionalità scalabili in base al numero di progetti o monitor attivi. Questo approccio garantisce flessibilità sia per piccoli team sia per aziende strutturate, offrendo un valore concreto in termini di affidabilità e qualità del servizio.
 
-Your text goes here.
+\newpage
 
-\subsection{A subsection}
+\tableofcontents
 
-More text.
+\newpage
+
+\input{sezioni/0_introduzione.tex}
+\newpage
+\input{sezioni/1_obiettivi.tex}
+\newpage
+\section{\textbf{Progettazione}}
+\newpage
+\section{\textbf{Descrizione implementazione/sviluppo delle varie parti}}
+\newpage
+\section{\textbf{Problematiche}}
+\newpage
+\section{\textbf{Risultati ottenuti}}
+\newpage
+\section{\textbf{Conclusioni e sviluppi futuri}}
+
 
 \end{document}
