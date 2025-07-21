@@ -2,7 +2,14 @@
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc} 
 \usepackage{geometry} 
-\geometry{a4paper} 
+\geometry{
+  a4paper,
+  top=2cm,
+  bottom=2cm,
+  outer=2cm,
+  inner=3cm,
+  bindingoffset=0cm
+}
 \usepackage{graphicx} 
 
 
@@ -20,8 +27,15 @@
 
 %%% SECTION TITLE APPEARANCE
 \usepackage{sectsty}
-\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+\allsectionsfont{\rmfamily\mdseries\upshape} % (See the fntguide.pdf for font help)
 % (This matches ConTeXt defaults)
+
+\usepackage{titlesec}
+
+% Titoli in grassetto (solo il titolo, non il contenuto)
+\titleformat{\section}{\normalfont\bfseries\Large}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries\large}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\bfseries\normalsize}{\thesubsubsection}{1em}{}
 
 %%% ToC (table of contents) APPEARANCE
 \usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
@@ -30,6 +44,11 @@
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
 
 \usepackage[hidelinks]{hyperref}
+
+\usepackage{newtxtext} % per il testo
+\usepackage{newtxmath} % per formule matematiche abbinate
+\usepackage{setspace}
+\onehalfspacing
 
 %%% END Article customizations
 
@@ -51,7 +70,7 @@ Il progetto di tirocinio presentato in questa tesi consiste nello sviluppo di un
 
 \input{sezioni/0_introduzione.tex}
 \newpage
-\section{\textbf{Obiettivi / specifiche / use case / requisiti}}
+\input{sezioni/1_obiettivi.tex}
 \newpage
 \section{\textbf{Progettazione}}
 \newpage
